@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body {
+    background-color: #54BAB9;
+    font-family: 'Ubuntu', serif;
+}
+
+header {
+    font-size: 80pt;
+    font-weight: 700;
+    color: #F7ECDE;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.add-todo {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.add-todo input,
+.add-todo input:focus {
+    padding: .5rem 1rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.add-todo input {
+    width: 15rem;
+    height: 2.5rem;
+    font-size: 20pt;
+}
+
+.add-todo input:focus {
+    box-shadow: 0 0 0 2pt #E9DAC1;
+}
+
+.add-todo input::placeholder {
+    color: rgb(190, 190, 190)
+}
+
+.todos {
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.linethrough {
+    width: 0;
+    position: absolute;
+    top: 2rem;
+    left: .35em;
+}
+
+.todo {
+    padding: 1rem .8rem;
+    margin: .3rem 0;
+    width: 15rem;
+    font-size: 20pt;
+    border-radius: 5px;
+    border: 1px solid #E9DAC1;
+    position: relative;
+    left: -39vw;
+
+    -webkit-transition: all 1s;
+     -moz-transition: all 1s;
+          transition: all 1s;
+}
+
+.fromLeft {
+    left: -60vw;
+}
+
+.fromRight {
+    left: 60vw;
+}
+
+.created {
+    left: 0;
+}
+
+.active {
+    left: 0;
+}
+
+.todo p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    display: inline-block;
+}
+
+.todo i {
+    cursor: pointer;
+    color: white;
+    font-size: .73em;
+    float: right;
+    margin-top: .4em;
+    margin-left: .4em;
+}
+
+.todo input {
+    width: 8.5rem;
+    padding: .2rem .3rem;
+    font-size: 16pt;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-inline-start: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-left: 1.5rem;
+}
+
+footer ul li svg path {
+    transition: fill .4s ease-in-out;
+}
+
+.facebook-ic path,
+.instagram-ic path,
+.github-ic path,
+.linkedin-ic path,
+.discord-ic path {
+    fill: white;
+}
+
+footer ul li a:hover > .facebook-ic path {
+    fill: #1877F2;
+}
+
+footer ul li a:hover > .instagram-ic path {
+    fill: #DF3030;
+}
+
+footer ul li a:hover > .github-ic path {
+    fill: black;
+}
+
+footer ul li a:hover > .linkedin-ic path {
+    fill: #0A66C2;
+}
+
+footer ul li a:hover > .discord-ic path {
+    fill: #5865F2;
+}
